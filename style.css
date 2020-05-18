@@ -1,13 +1,28 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    color: rgba(0,0,0,0.5);
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    color: rgba(0,0,0,0.4);
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.4em;
+    align-items: center;
+    margin-top: 2rem;
     background: linear-gradient(to right, red, yellow);
+}
+
+.container {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+    padding: 32px;
+    border-radius: 12px;
 }
 
 h1 {
@@ -18,10 +33,22 @@ h1 {
     text-transform: uppercase;
     letter-spacing: .3em;
     width: 100%;
+    padding: 0.6em;
 }
 
-.color1, .color2 {
-    border-radius: 0.4em;
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 50px;
+    height: 32px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
 }
 
 h2 {
@@ -30,7 +57,6 @@ h2 {
     letter-spacing: 0.1em;
     text-align: center;
     width: 100%;
-    margin-top: 2em;
 }
 
 h3 {
@@ -38,15 +64,18 @@ h3 {
     font-size: 1.2em;
     color: rgba(0,0,0,.5);
     text-align: center;
-    text-transform: none;
+    text-transform: uppercase;
     letter-spacing: .01em;
+    margin: 0.6em;
 }
 
 button {
     padding: 1em 4em;
     border-radius: 0.4em;
+    background: rgba(255,255,255,0.8);
     font-size: 0.8em;
-    margin-top: 1em;
+    cursor: pointer;
+    margin: 2em;
 }
 
 button:active {
@@ -54,4 +83,10 @@ button:active {
     color: whitesmoke;
     border-radius: 0.4em;
     border-color: blueviolet;
+    position: relative;
+    top: 1px;
+}
+
+button:focus {
+    outline: none;
 }

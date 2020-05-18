@@ -2,16 +2,26 @@
 <html>
     <head>
         <title>Background Generator</title>
+        <!-- Media Query -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS Style Sheet -->
         <link rel="stylesheet" href="style.css" type="text/css">
+        <!-- Montserrat Google Font API -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body id="gradient">
-        <h1>Gradient</h1>
-        <input class="color1"" type="color" name"color1">
-        <input type="color" class="color2" name"color1">
-        <h2>Current CSS Background</h2>
-        <h3></h3>
-        <button id="random">Generate</button>
+        <div class="container">
+            <h1>Gradient</h1>
+            <div class="color">
+                <input class="color1"" type="color" name"color1">
+                <input type="color" class="color2" name"color1">
+            </div>
+            <button id="random">Generate</button>
+            <h2>Current Background Color</h2>
+            <h3></h3>
+        </div>
+        <!-- JavaScript -->
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
