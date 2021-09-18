@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 6fr 1fr;
-    color: rgba(0,0,0,0.4);
+    color: rgba(215, 213, 209, 0.5);
     text-align: center;
     align-items: center;
     /* margin-top: 2rem; */
@@ -21,7 +21,8 @@ body {
     grid-row: 2/3;
     grid-column: 2/3;
     text-align: center;
-    background: rgba(255,255,255,0.5);
+    background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(255,255,255,0.5); */
     padding: 32px;
     border-radius: 12px;
 }
@@ -29,7 +30,7 @@ body {
 h1 {
     font-weight: 600;
     font-size: 4em;
-    color: rgba(0,0,0,.5);
+    /* color: rgba(0,0,0,.5); */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .3em;
@@ -64,7 +65,7 @@ h2 {
 h3 {
     font-weight: 500;
     font-size: 1.2em;
-    color: rgba(0,0,0,.5);
+    /* color: rgba(0,0,0,0.5); */
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .01em;
@@ -74,7 +75,10 @@ h3 {
 button {
     padding: 1em 4em;
     border-radius: 0.4em;
-    background: rgba(255,255,255,0.8);
+    border-width: 0;
+    background: rgba(0,0,0,0.8);
+    /* background: rgba(255,255,255,0.8); */
+    color: rgba(255,255,255,0.8);
     font-size: 0.8em;
     cursor: pointer;
     margin: 2em;
@@ -82,7 +86,7 @@ button {
 
 button:active {
     background-color: blue;
-    color: whitesmoke;
+    color: rgba(255,255,255,0.8);
     border-radius: 0.4em;
     border-color: blueviolet;
     position: relative;
