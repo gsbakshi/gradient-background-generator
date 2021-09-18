@@ -6,13 +6,14 @@
 }
 
 body {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 6fr 1fr;
     color: rgba(0,0,0,0.4);
     text-align: center;
     align-items: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     background: linear-gradient(to right, red, yellow);
 }
 
@@ -41,6 +42,7 @@ input[type="color"] {
     border: none;
     width: 50px;
     height: 32px;
+    cursor: pointer;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
